@@ -2,7 +2,7 @@
 Docker Image for Local AWS Lambda
 
 ### Step 1: Build Image
-docker build -t local-aws-lambda-boilerplate .
+```docker build -t local-aws-lambda-boilerplate .```
 
 ### Step 2: Run container
 ```docker run --rm \
