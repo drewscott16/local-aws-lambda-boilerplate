@@ -20,7 +20,7 @@ lambci/lambda:nodejs12.x index.handler
 ### Step 3: Run Lambda
 ```curl -XPOST "http://localhost:9001/2015-03-31/functions/function/invocations" -d '{}'```
 
-### Step 3: Run Lambda and output to file in local directory
+### OR: Run and output to file in local directory
 ```aws lambda invoke \
 --region us-west-2 \
 --endpoint http://localhost:9001 \
