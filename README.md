@@ -35,5 +35,6 @@ lambci/lambda:nodejs12.x index.handler
 
 ### Things I learned
 * amazon/aws-lambda-nodejs:12 and lambci/lambda:build-nodejs12.x are both docker images that are very similar but the latter allows you watch for changes and refresh your handler
-* Instead of using a build file you could run it once with ```docker run --rm -v "$PWD":/var/task lambci/lambda:nodejs12.x index.handler```
+* To run once use ```docker run --rm -v "$PWD":/var/task lambci/lambda:nodejs12.x index.handler```
+* ```-v "$PWD":/var/task``` lets you mount locally, the ```:/var/task``` is the path inside the container
 * You need to run it on port 9001, if you want to change the port then look at the docs, this got me
