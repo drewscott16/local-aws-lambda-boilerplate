@@ -17,7 +17,7 @@ lambci/lambda:nodejs12.x index.handler
 
 ### Step 3: Run Lambda and output to file in local directory
 ```aws lambda invoke \
---region eu-west-1 \
+--region us-west-2 \
 --endpoint http://localhost:9001 \
 --no-sign-request \
 --function-name function \
