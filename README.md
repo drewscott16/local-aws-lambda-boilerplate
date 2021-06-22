@@ -5,6 +5,7 @@ Docker Image for Local AWS Lambda
 [Docker-lambda](https://github.com/lambci/docker-lambda "Github link to docker-lambda")
 
 ### Step 1: Build Image
+### Don't think you need to build the image, I couldnt get the Dockerfile to work
 ```docker build -t local-aws-lambda-boilerplate .```
 
 ### Step 2: Run container
