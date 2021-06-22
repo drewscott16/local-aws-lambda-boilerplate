@@ -31,7 +31,21 @@ lambci/lambda:nodejs12.x index.handler
 ```
 
 ### Step 4: Deploy Lambda to production
+```
+export $(xargs < .env)
+zip -r function.zip . &&
+aws lambda update-function-code --function-name=$function-name \
+--region $region \
+--zip-file=fileb:///function.zip \
+--publish \
+--profile $aws-profile &&
+rm function.zip
+```
 
+### Step 5: Invoke production lambda
+```
+    code here
+```
 
 ### Things I learned
 * amazon/aws-lambda-nodejs:12 and lambci/lambda:build-nodejs12.x are both docker images that are very similar but the latter allows you watch for changes and refresh your handler
